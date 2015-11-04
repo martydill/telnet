@@ -134,30 +134,33 @@ void TelnetSession::mainLoop(void)
 		}
 
 		// Scan for command codes
-		while(*receivedData != '\0')
+		unsigned char *pPos = receivedData;
+		while(*pPos != '\0')
 		{
 			// Telnet control code
-			if(*receivedData == IAC)
+			if(*pPos == IAC)
 			{
-				int bytesRead = handleCommand(receivedData);
-				receivedData += bytesRead;
+				int bytesRead = handleCommand(pPos);
+				pPos += bytesRead;
 			}
 			
 			// VT100 control code
-			else if(*receivedData == VT_ESC)
+			else if(*pPos == VT_ESC)
 			{
-				int bytesRead = handleVTCommand(receivedData);
-				receivedData += bytesRead;
+				int bytesRead = handleVTCommand(pPos);
+				pPos += bytesRead;
 			}
 
 			// Just text
 			else
 			{
-				cout << *receivedData;
+				cout << *pPos;
 				cout.flush();
-				receivedData++;
+				pPos++;
 			}
 		}
+
+		delete[] receivedData;
 	}
 
 	return;

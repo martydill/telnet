@@ -1,6 +1,6 @@
 
-#include "Console.h"
 #include <iostream>
+#include "Console.h"
 
 
 // Default constructor
