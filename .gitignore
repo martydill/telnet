@@ -1,0 +1,7 @@
+DuiLib_vs2008.suo
+*.exp
+*.pdb
+*.idb
+*.ilk
+/Debug/
+/Release/
