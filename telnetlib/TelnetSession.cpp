@@ -15,6 +15,7 @@
 TelnetSession::TelnetSession()
 : m_hMtxS2CBuf(NULL)
 , m_hOutputThread(NULL)
+, console(NULL)
 {
 	debugLog.open("log.txt", ios::out);
 	m_hMtxS2CBuf = CreateMutex(NULL, false, NULL);
@@ -25,8 +26,9 @@ TelnetSession::TelnetSession()
 TelnetSession::~TelnetSession()
 {
 	WSACleanup();
-	//if(console)
-		//delete console;
+	if(NULL != console)
+		delete console;
+	KillThreads();
 	if (NULL != m_hMtxS2CBuf)
 	{
 		CloseHandle(m_hMtxS2CBuf);
@@ -117,8 +119,11 @@ unsigned long TelnetSession::InnerOutputThread()
 			// Just text
 			else
 			{
-				cout << *pPos;
-				cout.flush();
+				if (NULL != console)
+				{
+					cout << *pPos;
+					cout.flush();
+				}
 				WaitForSingleObject(m_hMtxS2CBuf, INFINITE);
 				m_s2cBuf += *pPos;
 				ReleaseMutex(m_hMtxS2CBuf);

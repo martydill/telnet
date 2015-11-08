@@ -6,6 +6,9 @@
 // Default constructor
 Console::Console()
 {
+	AllocConsole();
+	freopen("CONOUT$", "w", stdout);
+	freopen("CONIN$", "r", stdin);
 	consoleHandle = GetStdHandle(STD_OUTPUT_HANDLE);
 	GetConsoleScreenBufferInfo(consoleHandle, &consoleInfo);
 }
@@ -14,6 +17,7 @@ Console::Console()
 // Default destructor
 Console::~Console()
 {
+	FreeConsole();
 	//CloseHandle(consoleHandle);
 }
 

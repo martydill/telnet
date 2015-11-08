@@ -1,6 +1,11 @@
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Telnet", "Telnet.vcxproj", "{4434FDA9-AB50-4CD5-A898-1FE526FA91C9}"
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Telnet", "Telnet.vcproj", "{4434FDA9-AB50-4CD5-A898-1FE526FA91C9}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "telnetlib", "telnetlib\telnetlib.vcproj", "{D995EC07-3A88-44C3-8701-C0312186633E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test", "test\test.vcproj", "{D5A01B66-B1CB-48C3-993E-A0859400F827}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -12,6 +17,14 @@ Global
 		{4434FDA9-AB50-4CD5-A898-1FE526FA91C9}.Debug|Win32.Build.0 = Debug|Win32
 		{4434FDA9-AB50-4CD5-A898-1FE526FA91C9}.Release|Win32.ActiveCfg = Release|Win32
 		{4434FDA9-AB50-4CD5-A898-1FE526FA91C9}.Release|Win32.Build.0 = Release|Win32
+		{D995EC07-3A88-44C3-8701-C0312186633E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D995EC07-3A88-44C3-8701-C0312186633E}.Debug|Win32.Build.0 = Debug|Win32
+		{D995EC07-3A88-44C3-8701-C0312186633E}.Release|Win32.ActiveCfg = Release|Win32
+		{D995EC07-3A88-44C3-8701-C0312186633E}.Release|Win32.Build.0 = Release|Win32
+		{D5A01B66-B1CB-48C3-993E-A0859400F827}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D5A01B66-B1CB-48C3-993E-A0859400F827}.Debug|Win32.Build.0 = Debug|Win32
+		{D5A01B66-B1CB-48C3-993E-A0859400F827}.Release|Win32.ActiveCfg = Release|Win32
+		{D5A01B66-B1CB-48C3-993E-A0859400F827}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
