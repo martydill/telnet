@@ -95,7 +95,7 @@ char* Connection::receive(void)
 
 	recvBuf[bytesReceived] = '\0';
 
-	char* receivedData = new char[bytesReceived];
+	char* receivedData = new char[bytesReceived+1];
 	strcpy(receivedData, recvBuf);
 	delete[] recvBuf;
 

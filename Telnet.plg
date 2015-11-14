@@ -6,13 +6,15 @@
 --------------------Configuration: Telnet - Win32 Debug--------------------
 </h3>
 <h3>Command Lines</h3>
-Creating temporary file "C:\DOCUME~1\Marty\LOCALS~1\Temp\RSP248.tmp" with contents
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP1C6.tmp" with contents
 [
 /nologo /MLd /W4 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /FA /Fa"Debug/" /FR"Debug/" /Fp"Debug/Telnet.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
-"F:\Projects\Telnet\TelnetSession.cpp"
+"D:\github\telnet\Connection.cpp"
+"D:\github\telnet\Main.cpp"
+"D:\github\telnet\TelnetSession.cpp"
 ]
-Creating command line "cl.exe @C:\DOCUME~1\Marty\LOCALS~1\Temp\RSP248.tmp" 
-Creating temporary file "C:\DOCUME~1\Marty\LOCALS~1\Temp\RSP249.tmp" with contents
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP1C6.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP1C7.tmp" with contents
 [
 wsock32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/Telnet.pdb" /debug /machine:I386 /out:"Debug/Telnet.exe" /pdbtype:sept 
 .\Debug\Connection.obj
@@ -21,17 +23,215 @@ wsock32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32
 .\Debug\SendBuf.obj
 .\Debug\TelnetSession.obj
 ]
-Creating command line "link.exe @C:\DOCUME~1\Marty\LOCALS~1\Temp\RSP249.tmp"
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP1C7.tmp"
 <h3>Output Window</h3>
 Compiling...
+Connection.cpp
+c:\program files\microsoft visual studio\vc98\include\xmemory(39) : warning C4100: '_P' : unreferenced formal parameter
+c:\program files\microsoft visual studio\vc98\include\xmemory(41) : warning C4100: '_P' : unreferenced formal parameter
+c:\program files\microsoft visual studio\vc98\include\xlocale(242) : warning C4511: 'codecvt_base' : copy constructor could not be generated
+        c:\program files\microsoft visual studio\vc98\include\xlocale(223) : see declaration of 'codecvt_base'
+c:\program files\microsoft visual studio\vc98\include\xlocale(242) : warning C4512: 'codecvt_base' : assignment operator could not be generated
+        c:\program files\microsoft visual studio\vc98\include\xlocale(223) : see declaration of 'codecvt_base'
+c:\program files\microsoft visual studio\vc98\include\xlocale(296) : warning C4663: C++ language change: to explicitly specialize class template 'codecvt' use the following syntax:
+        template<> class codecvt<unsigned short,char,int> ...
+c:\program files\microsoft visual studio\vc98\include\xlocale(398) : warning C4511: 'codecvt<unsigned short,char,int>' : copy constructor could not be generated
+        c:\program files\microsoft visual studio\vc98\include\xlocale(296) : see declaration of 'codecvt<unsigned short,char,int>'
+c:\program files\microsoft visual studio\vc98\include\xlocale(398) : warning C4512: 'codecvt<unsigned short,char,int>' : assignment operator could not be generated
+        c:\program files\microsoft visual studio\vc98\include\xlocale(296) : see declaration of 'codecvt<unsigned short,char,int>'
+c:\program files\microsoft visual studio\vc98\include\xlocale(387) : warning C4018: '<' : signed/unsigned mismatch
+c:\program files\microsoft visual studio\vc98\include\xlocale(420) : warning C4511: 'ctype_base' : copy constructor could not be generated
+        c:\program files\microsoft visual studio\vc98\include\xlocale(410) : see declaration of 'ctype_base'
+c:\program files\microsoft visual studio\vc98\include\xlocale(420) : warning C4512: 'ctype_base' : assignment operator could not be generated
+        c:\program files\microsoft visual studio\vc98\include\xlocale(410) : see declaration of 'ctype_base'
+c:\program files\microsoft visual studio\vc98\include\xlocale(519) : warning C4663: C++ language change: to explicitly specialize class template 'ctype' use the following syntax:
+        template<> class ctype<char> ...
+c:\program files\microsoft visual studio\vc98\include\xlocale(611) : warning C4511: 'ctype<char>' : copy constructor could not be generated
+        c:\program files\microsoft visual studio\vc98\include\xlocale(519) : see declaration of 'ctype<char>'
+c:\program files\microsoft visual studio\vc98\include\xlocale(611) : warning C4512: 'ctype<char>' : assignment operator could not be generated
+        c:\program files\microsoft visual studio\vc98\include\xlocale(519) : see declaration of 'ctype<char>'
+c:\program files\microsoft visual studio\vc98\include\xlocale(552) : warning C4100: '_D' : unreferenced formal parameter
+c:\program files\microsoft visual studio\vc98\include\xlocale(554) : warning C4100: '_D' : unreferenced formal parameter
+c:\program files\microsoft visual studio\vc98\include\ostream(50) : warning C4512: 'sentry' : assignment operator could not be generated
+        c:\program files\microsoft visual studio\vc98\include\ostream(38) : see declaration of 'sentry'
+        c:\program files\microsoft visual studio\vc98\include\ostream(373) : see reference to class template instantiation 'std::basic_ostream<char,struct std::char_traits<char> >' being compiled
+c:\program files\microsoft visual studio\vc98\include\ostream(50) : warning C4512: 'sentry' : assignment operator could not be generated
+        c:\program files\microsoft visual studio\vc98\include\ostream(38) : see declaration of 'sentry'
+        c:\program files\microsoft visual studio\vc98\include\ostream(379) : see reference to class template instantiation 'std::basic_ostream<unsigned short,struct std::char_traits<unsigned short> >' being compiled
+c:\program files\microsoft visual studio\vc98\include\xlocale(513) : warning C4511: 'ctype<unsigned short>' : copy constructor could not be generated
+        c:\program files\microsoft visual studio\vc98\include\istream(573) : see reference to class template instantiation 'std::ctype<unsigned short>' being compiled
+c:\program files\microsoft visual studio\vc98\include\xlocale(513) : warning C4512: 'ctype<unsigned short>' : assignment operator could not be generated
+        c:\program files\microsoft visual studio\vc98\include\istream(573) : see reference to class template instantiation 'std::ctype<unsigned short>' being compiled
+d:\github\telnet\connection.cpp(53) : warning C4244: 'argument' : conversion from 'int' to 'unsigned short', possible loss of data
+c:\program files\microsoft visual studio\vc98\include\streambuf(181) : warning C4100: '_Loc' : unreferenced formal parameter
+        c:\program files\microsoft visual studio\vc98\include\streambuf(182) : while compiling class-template member function 'void __thiscall std::basic_streambuf<char,struct std::char_traits<char> >::imbue(const class std::locale &)'
+c:\program files\microsoft visual studio\vc98\include\streambuf(181) : warning C4100: '_Loc' : unreferenced formal parameter
+        c:\program files\microsoft visual studio\vc98\include\streambuf(182) : while compiling class-template member function 'void __thiscall std::basic_streambuf<unsigned short,struct std::char_traits<unsigned short> >::imbue(const class std::locale &)'
+c:\program files\microsoft visual studio\vc98\include\xstring(600) : warning C4245: 'initializing' : conversion from 'const int' to 'const unsigned int', signed/unsigned mismatch
+        c:\program files\microsoft visual studio\vc98\include\xmemory(59) : while compiling class-template static data member 'const unsigned int std::basic_string<char,std::char_traits<char>,std::allocator<char> >::npos'
+Main.cpp
+c:\program files\microsoft visual studio\vc98\include\xmemory(39) : warning C4100: '_P' : unreferenced formal parameter
+c:\program files\microsoft visual studio\vc98\include\xmemory(41) : warning C4100: '_P' : unreferenced formal parameter
+c:\program files\microsoft visual studio\vc98\include\xlocale(242) : warning C4511: 'codecvt_base' : copy constructor could not be generated
+        c:\program files\microsoft visual studio\vc98\include\xlocale(223) : see declaration of 'codecvt_base'
+c:\program files\microsoft visual studio\vc98\include\xlocale(242) : warning C4512: 'codecvt_base' : assignment operator could not be generated
+        c:\program files\microsoft visual studio\vc98\include\xlocale(223) : see declaration of 'codecvt_base'
+c:\program files\microsoft visual studio\vc98\include\xlocale(296) : warning C4663: C++ language change: to explicitly specialize class template 'codecvt' use the following syntax:
+        template<> class codecvt<unsigned short,char,int> ...
+c:\program files\microsoft visual studio\vc98\include\xlocale(398) : warning C4511: 'codecvt<unsigned short,char,int>' : copy constructor could not be generated
+        c:\program files\microsoft visual studio\vc98\include\xlocale(296) : see declaration of 'codecvt<unsigned short,char,int>'
+c:\program files\microsoft visual studio\vc98\include\xlocale(398) : warning C4512: 'codecvt<unsigned short,char,int>' : assignment operator could not be generated
+        c:\program files\microsoft visual studio\vc98\include\xlocale(296) : see declaration of 'codecvt<unsigned short,char,int>'
+c:\program files\microsoft visual studio\vc98\include\xlocale(387) : warning C4018: '<' : signed/unsigned mismatch
+c:\program files\microsoft visual studio\vc98\include\xlocale(420) : warning C4511: 'ctype_base' : copy constructor could not be generated
+        c:\program files\microsoft visual studio\vc98\include\xlocale(410) : see declaration of 'ctype_base'
+c:\program files\microsoft visual studio\vc98\include\xlocale(420) : warning C4512: 'ctype_base' : assignment operator could not be generated
+        c:\program files\microsoft visual studio\vc98\include\xlocale(410) : see declaration of 'ctype_base'
+c:\program files\microsoft visual studio\vc98\include\xlocale(519) : warning C4663: C++ language change: to explicitly specialize class template 'ctype' use the following syntax:
+        template<> class ctype<char> ...
+c:\program files\microsoft visual studio\vc98\include\xlocale(611) : warning C4511: 'ctype<char>' : copy constructor could not be generated
+        c:\program files\microsoft visual studio\vc98\include\xlocale(519) : see declaration of 'ctype<char>'
+c:\program files\microsoft visual studio\vc98\include\xlocale(611) : warning C4512: 'ctype<char>' : assignment operator could not be generated
+        c:\program files\microsoft visual studio\vc98\include\xlocale(519) : see declaration of 'ctype<char>'
+c:\program files\microsoft visual studio\vc98\include\xlocale(552) : warning C4100: '_D' : unreferenced formal parameter
+c:\program files\microsoft visual studio\vc98\include\xlocale(554) : warning C4100: '_D' : unreferenced formal parameter
+c:\program files\microsoft visual studio\vc98\include\ostream(50) : warning C4512: 'sentry' : assignment operator could not be generated
+        c:\program files\microsoft visual studio\vc98\include\ostream(38) : see declaration of 'sentry'
+        c:\program files\microsoft visual studio\vc98\include\ostream(373) : see reference to class template instantiation 'std::basic_ostream<char,struct std::char_traits<char> >' being compiled
+c:\program files\microsoft visual studio\vc98\include\ostream(50) : warning C4512: 'sentry' : assignment operator could not be generated
+        c:\program files\microsoft visual studio\vc98\include\ostream(38) : see declaration of 'sentry'
+        c:\program files\microsoft visual studio\vc98\include\ostream(379) : see reference to class template instantiation 'std::basic_ostream<unsigned short,struct std::char_traits<unsigned short> >' being compiled
+c:\program files\microsoft visual studio\vc98\include\xlocale(513) : warning C4511: 'ctype<unsigned short>' : copy constructor could not be generated
+        c:\program files\microsoft visual studio\vc98\include\istream(573) : see reference to class template instantiation 'std::ctype<unsigned short>' being compiled
+c:\program files\microsoft visual studio\vc98\include\xlocale(513) : warning C4512: 'ctype<unsigned short>' : assignment operator could not be generated
+        c:\program files\microsoft visual studio\vc98\include\istream(573) : see reference to class template instantiation 'std::ctype<unsigned short>' being compiled
+c:\program files\microsoft visual studio\vc98\include\streambuf(181) : warning C4100: '_Loc' : unreferenced formal parameter
+        c:\program files\microsoft visual studio\vc98\include\streambuf(182) : while compiling class-template member function 'void __thiscall std::basic_streambuf<char,struct std::char_traits<char> >::imbue(const class std::locale &)'
+c:\program files\microsoft visual studio\vc98\include\streambuf(181) : warning C4100: '_Loc' : unreferenced formal parameter
+        c:\program files\microsoft visual studio\vc98\include\streambuf(182) : while compiling class-template member function 'void __thiscall std::basic_streambuf<unsigned short,struct std::char_traits<unsigned short> >::imbue(const class std::locale &)'
+c:\program files\microsoft visual studio\vc98\include\xlocale(292) : warning C4511: 'codecvt<char,char,int>' : copy constructor could not be generated
+        c:\program files\microsoft visual studio\vc98\include\fstream(117) : see reference to class template instantiation 'std::codecvt<char,char,int>' being compiled
+        c:\program files\microsoft visual studio\vc98\include\fstream(99) : while compiling class-template member function 'int __thiscall std::basic_filebuf<char,struct std::char_traits<char> >::overflow(int)'
+c:\program files\microsoft visual studio\vc98\include\xlocale(292) : warning C4512: 'codecvt<char,char,int>' : assignment operator could not be generated
+        c:\program files\microsoft visual studio\vc98\include\fstream(117) : see reference to class template instantiation 'std::codecvt<char,char,int>' being compiled
+        c:\program files\microsoft visual studio\vc98\include\fstream(99) : while compiling class-template member function 'int __thiscall std::basic_filebuf<char,struct std::char_traits<char> >::overflow(int)'
+c:\program files\microsoft visual studio\vc98\include\xlocale(277) : warning C4100: '_State' : unreferenced formal parameter
+        c:\program files\microsoft visual studio\vc98\include\xlocale(280) : while compiling class-template member function 'int __thiscall std::codecvt<char,char,int>::do_in(int &,const char *,const char *,const char *& ,char *,char *,char *& ) const'
+c:\program files\microsoft visual studio\vc98\include\xlocale(282) : warning C4100: '_State' : unreferenced formal parameter
+        c:\program files\microsoft visual studio\vc98\include\xlocale(285) : while compiling class-template member function 'int __thiscall std::codecvt<char,char,int>::do_out(int &,const char *,const char *,const char *& ,char *,char *,char *& ) const'
+c:\program files\microsoft visual studio\vc98\include\xlocale(289) : warning C4018: '<' : signed/unsigned mismatch
+        c:\program files\microsoft visual studio\vc98\include\xlocale(289) : while compiling class-template member function 'int __thiscall std::codecvt<char,char,int>::do_length(int &,const char *,const char *,unsigned int) const'
+c:\program files\microsoft visual studio\vc98\include\xlocale(287) : warning C4100: '_State' : unreferenced formal parameter
+        c:\program files\microsoft visual studio\vc98\include\xlocale(289) : while compiling class-template member function 'int __thiscall std::codecvt<char,char,int>::do_length(int &,const char *,const char *,unsigned int) const'
+c:\program files\microsoft visual studio\vc98\include\fstream(219) : warning C4097: typedef-name '_Mysb' used as synonym for class-name 'basic_filebuf<char,struct std::char_traits<char> >::basic_streambuf<char,struct std::char_traits<char> >'
+        c:\program files\microsoft visual studio\vc98\include\fstream(213) : while compiling class-template member function 'void __thiscall std::basic_filebuf<char,struct std::char_traits<char> >::_Init(struct _iobuf *,enum std::basic_filebuf<char,struct std::char_traits<char> >::_Initfl)'
+c:\program files\microsoft visual studio\vc98\include\fstream(220) : warning C4127: conditional expression is constant
+        c:\program files\microsoft visual studio\vc98\include\fstream(213) : while compiling class-template member function 'void __thiscall std::basic_filebuf<char,struct std::char_traits<char> >::_Init(struct _iobuf *,enum std::basic_filebuf<char,struct std::char_traits<char> >::_Initfl)'
+c:\program files\microsoft visual studio\vc98\include\fstream(221) : warning C4097: typedef-name '_Mysb' used as synonym for class-name 'basic_filebuf<char,struct std::char_traits<char> >::basic_streambuf<char,struct std::char_traits<char> >'
+        c:\program files\microsoft visual studio\vc98\include\fstream(213) : while compiling class-template member function 'void __thiscall std::basic_filebuf<char,struct std::char_traits<char> >::_Init(struct _iobuf *,enum std::basic_filebuf<char,struct std::char_traits<char> >::_Initfl)'
+c:\program files\microsoft visual studio\vc98\include\xstring(600) : warning C4245: 'initializing' : conversion from 'const int' to 'const unsigned int', signed/unsigned mismatch
+        c:\program files\microsoft visual studio\vc98\include\xmemory(59) : while compiling class-template static data member 'const unsigned int std::basic_string<char,std::char_traits<char>,std::allocator<char> >::npos'
+c:\program files\microsoft visual studio\vc98\include\ostream(291) : warning C4018: '<=' : signed/unsigned mismatch
+        d:\github\telnet\main.cpp(35) : see reference to function template instantiation 'class std::basic_ostream<char,struct std::char_traits<char> > &__cdecl std::operator <<(class std::basic_ostream<char,struct std::char_traits<char> > &,const char *)' being compiled
+c:\program files\microsoft visual studio\vc98\include\ostream(305) : warning C4018: '!=' : signed/unsigned mismatch
+        d:\github\telnet\main.cpp(35) : see reference to function template instantiation 'class std::basic_ostream<char,struct std::char_traits<char> > &__cdecl std::operator <<(class std::basic_ostream<char,struct std::char_traits<char> > &,const char *)' being compiled
 TelnetSession.cpp
-f:\projects\telnet\telnetsession.cpp(74) : warning C4101: 'errorMessage' : unreferenced local variable
-f:\projects\telnet\telnetsession.cpp(128) : warning C4101: 'errorMessage' : unreferenced local variable
-f:\projects\telnet\telnetsession.cpp(266) : warning C4244: 'argument' : conversion from 'int' to 'unsigned char', possible loss of data
-f:\projects\telnet\telnetsession.cpp(266) : warning C4244: 'argument' : conversion from 'int' to 'unsigned char', possible loss of data
-f:\projects\telnet\telnetsession.cpp(225) : warning C4101: 'secondByte' : unreferenced local variable
-f:\projects\telnet\telnetsession.cpp(225) : warning C4101: 'firstByte' : unreferenced local variable
-f:\projects\telnet\telnetsession.cpp(225) : warning C4101: 'thirdByte' : unreferenced local variable
+c:\program files\microsoft visual studio\vc98\include\xmemory(39) : warning C4100: '_P' : unreferenced formal parameter
+c:\program files\microsoft visual studio\vc98\include\xmemory(41) : warning C4100: '_P' : unreferenced formal parameter
+c:\program files\microsoft visual studio\vc98\include\xlocale(242) : warning C4511: 'codecvt_base' : copy constructor could not be generated
+        c:\program files\microsoft visual studio\vc98\include\xlocale(223) : see declaration of 'codecvt_base'
+c:\program files\microsoft visual studio\vc98\include\xlocale(242) : warning C4512: 'codecvt_base' : assignment operator could not be generated
+        c:\program files\microsoft visual studio\vc98\include\xlocale(223) : see declaration of 'codecvt_base'
+c:\program files\microsoft visual studio\vc98\include\xlocale(296) : warning C4663: C++ language change: to explicitly specialize class template 'codecvt' use the following syntax:
+        template<> class codecvt<unsigned short,char,int> ...
+c:\program files\microsoft visual studio\vc98\include\xlocale(398) : warning C4511: 'codecvt<unsigned short,char,int>' : copy constructor could not be generated
+        c:\program files\microsoft visual studio\vc98\include\xlocale(296) : see declaration of 'codecvt<unsigned short,char,int>'
+c:\program files\microsoft visual studio\vc98\include\xlocale(398) : warning C4512: 'codecvt<unsigned short,char,int>' : assignment operator could not be generated
+        c:\program files\microsoft visual studio\vc98\include\xlocale(296) : see declaration of 'codecvt<unsigned short,char,int>'
+c:\program files\microsoft visual studio\vc98\include\xlocale(387) : warning C4018: '<' : signed/unsigned mismatch
+c:\program files\microsoft visual studio\vc98\include\xlocale(420) : warning C4511: 'ctype_base' : copy constructor could not be generated
+        c:\program files\microsoft visual studio\vc98\include\xlocale(410) : see declaration of 'ctype_base'
+c:\program files\microsoft visual studio\vc98\include\xlocale(420) : warning C4512: 'ctype_base' : assignment operator could not be generated
+        c:\program files\microsoft visual studio\vc98\include\xlocale(410) : see declaration of 'ctype_base'
+c:\program files\microsoft visual studio\vc98\include\xlocale(519) : warning C4663: C++ language change: to explicitly specialize class template 'ctype' use the following syntax:
+        template<> class ctype<char> ...
+c:\program files\microsoft visual studio\vc98\include\xlocale(611) : warning C4511: 'ctype<char>' : copy constructor could not be generated
+        c:\program files\microsoft visual studio\vc98\include\xlocale(519) : see declaration of 'ctype<char>'
+c:\program files\microsoft visual studio\vc98\include\xlocale(611) : warning C4512: 'ctype<char>' : assignment operator could not be generated
+        c:\program files\microsoft visual studio\vc98\include\xlocale(519) : see declaration of 'ctype<char>'
+c:\program files\microsoft visual studio\vc98\include\xlocale(552) : warning C4100: '_D' : unreferenced formal parameter
+c:\program files\microsoft visual studio\vc98\include\xlocale(554) : warning C4100: '_D' : unreferenced formal parameter
+c:\program files\microsoft visual studio\vc98\include\ostream(50) : warning C4512: 'sentry' : assignment operator could not be generated
+        c:\program files\microsoft visual studio\vc98\include\ostream(38) : see declaration of 'sentry'
+        c:\program files\microsoft visual studio\vc98\include\ostream(373) : see reference to class template instantiation 'std::basic_ostream<char,struct std::char_traits<char> >' being compiled
+c:\program files\microsoft visual studio\vc98\include\ostream(50) : warning C4512: 'sentry' : assignment operator could not be generated
+        c:\program files\microsoft visual studio\vc98\include\ostream(38) : see declaration of 'sentry'
+        c:\program files\microsoft visual studio\vc98\include\ostream(379) : see reference to class template instantiation 'std::basic_ostream<unsigned short,struct std::char_traits<unsigned short> >' being compiled
+c:\program files\microsoft visual studio\vc98\include\xlocale(513) : warning C4511: 'ctype<unsigned short>' : copy constructor could not be generated
+        c:\program files\microsoft visual studio\vc98\include\istream(573) : see reference to class template instantiation 'std::ctype<unsigned short>' being compiled
+c:\program files\microsoft visual studio\vc98\include\xlocale(513) : warning C4512: 'ctype<unsigned short>' : assignment operator could not be generated
+        c:\program files\microsoft visual studio\vc98\include\istream(573) : see reference to class template instantiation 'std::ctype<unsigned short>' being compiled
+d:\github\telnet\telnetsession.cpp(74) : warning C4101: 'errorMessage' : unreferenced local variable
+d:\github\telnet\telnetsession.cpp(128) : warning C4101: 'errorMessage' : unreferenced local variable
+d:\github\telnet\telnetsession.cpp(269) : warning C4244: 'argument' : conversion from 'int' to 'unsigned char', possible loss of data
+d:\github\telnet\telnetsession.cpp(269) : warning C4244: 'argument' : conversion from 'int' to 'unsigned char', possible loss of data
+d:\github\telnet\telnetsession.cpp(228) : warning C4101: 'secondByte' : unreferenced local variable
+d:\github\telnet\telnetsession.cpp(228) : warning C4101: 'firstByte' : unreferenced local variable
+d:\github\telnet\telnetsession.cpp(228) : warning C4101: 'thirdByte' : unreferenced local variable
+c:\program files\microsoft visual studio\vc98\include\xlocnum(639) : warning C4511: 'num_put<char,class std::ostreambuf_iterator<char,struct std::char_traits<char> > >' : copy constructor could not be generated
+        c:\program files\microsoft visual studio\vc98\include\ostream(114) : see reference to class template instantiation 'std::num_put<char,class std::ostreambuf_iterator<char,struct std::char_traits<char> > >' being compiled
+        c:\program files\microsoft visual studio\vc98\include\ostream(106) : while compiling class-template member function 'class std::basic_ostream<char,struct std::char_traits<char> > &__thiscall std::basic_ostream<char,struct std::char_traits<char> >::operator <<(int)'
+c:\program files\microsoft visual studio\vc98\include\xlocnum(639) : warning C4512: 'num_put<char,class std::ostreambuf_iterator<char,struct std::char_traits<char> > >' : assignment operator could not be generated
+        c:\program files\microsoft visual studio\vc98\include\ostream(114) : see reference to class template instantiation 'std::num_put<char,class std::ostreambuf_iterator<char,struct std::char_traits<char> > >' being compiled
+        c:\program files\microsoft visual studio\vc98\include\ostream(106) : while compiling class-template member function 'class std::basic_ostream<char,struct std::char_traits<char> > &__thiscall std::basic_ostream<char,struct std::char_traits<char> >::operator <<(int)'
+c:\program files\microsoft visual studio\vc98\include\streambuf(181) : warning C4100: '_Loc' : unreferenced formal parameter
+        c:\program files\microsoft visual studio\vc98\include\streambuf(182) : while compiling class-template member function 'void __thiscall std::basic_streambuf<char,struct std::char_traits<char> >::imbue(const class std::locale &)'
+c:\program files\microsoft visual studio\vc98\include\streambuf(181) : warning C4100: '_Loc' : unreferenced formal parameter
+        c:\program files\microsoft visual studio\vc98\include\streambuf(182) : while compiling class-template member function 'void __thiscall std::basic_streambuf<unsigned short,struct std::char_traits<unsigned short> >::imbue(const class std::locale &)'
+c:\program files\microsoft visual studio\vc98\include\xlocale(292) : warning C4511: 'codecvt<char,char,int>' : copy constructor could not be generated
+        c:\program files\microsoft visual studio\vc98\include\fstream(117) : see reference to class template instantiation 'std::codecvt<char,char,int>' being compiled
+        c:\program files\microsoft visual studio\vc98\include\fstream(99) : while compiling class-template member function 'int __thiscall std::basic_filebuf<char,struct std::char_traits<char> >::overflow(int)'
+c:\program files\microsoft visual studio\vc98\include\xlocale(292) : warning C4512: 'codecvt<char,char,int>' : assignment operator could not be generated
+        c:\program files\microsoft visual studio\vc98\include\fstream(117) : see reference to class template instantiation 'std::codecvt<char,char,int>' being compiled
+        c:\program files\microsoft visual studio\vc98\include\fstream(99) : while compiling class-template member function 'int __thiscall std::basic_filebuf<char,struct std::char_traits<char> >::overflow(int)'
+c:\program files\microsoft visual studio\vc98\include\fstream(71) : warning C4097: typedef-name '_Mysb' used as synonym for class-name 'basic_streambuf<char,struct std::char_traits<char> >'
+        c:\program files\microsoft visual studio\vc98\include\fstream(71) : while compiling class-template member function '__thiscall std::basic_filebuf<char,struct std::char_traits<char> >::std::basic_filebuf<char,struct std::char_traits<char> >(struct _iobuf *)'
+c:\program files\microsoft visual studio\vc98\include\xlocnum(69) : warning C4511: 'numpunct<char>' : copy constructor could not be generated
+        c:\program files\microsoft visual studio\vc98\include\xlocnum(465) : see reference to class template instantiation 'std::numpunct<char>' being compiled
+        c:\program files\microsoft visual studio\vc98\include\xlocnum(460) : while compiling class-template member function 'class std::ostreambuf_iterator<char,struct std::char_traits<char> > __thiscall std::num_put<char,class std::ostreambuf_iterator<char,struct std::char_traits<char> > >::do_put(class std::ostreambuf_iterator<char,struct std::char_traits<char> >,class std::ios_base &,char,bool) const'
+c:\program files\microsoft visual studio\vc98\include\xlocnum(69) : warning C4512: 'numpunct<char>' : assignment operator could not be generated
+        c:\program files\microsoft visual studio\vc98\include\xlocnum(465) : see reference to class template instantiation 'std::numpunct<char>' being compiled
+        c:\program files\microsoft visual studio\vc98\include\xlocnum(460) : while compiling class-template member function 'class std::ostreambuf_iterator<char,struct std::char_traits<char> > __thiscall std::num_put<char,class std::ostreambuf_iterator<char,struct std::char_traits<char> > >::do_put(class std::ostreambuf_iterator<char,struct std::char_traits<char> >,class std::ios_base &,char,bool) const'
+c:\program files\microsoft visual studio\vc98\include\xlocnum(469) : warning C4018: '<=' : signed/unsigned mismatch
+        c:\program files\microsoft visual studio\vc98\include\xlocnum(460) : while compiling class-template member function 'class std::ostreambuf_iterator<char,struct std::char_traits<char> > __thiscall std::num_put<char,class std::ostreambuf_iterator<char,struct std::char_traits<char> > >::do_put(class std::ostreambuf_iterator<char,struct std::char_traits<char> >,class std::ios_base &,char,bool) const'
+c:\program files\microsoft visual studio\vc98\include\xlocale(277) : warning C4100: '_State' : unreferenced formal parameter
+        c:\program files\microsoft visual studio\vc98\include\xlocale(280) : while compiling class-template member function 'int __thiscall std::codecvt<char,char,int>::do_in(int &,const char *,const char *,const char *& ,char *,char *,char *& ) const'
+c:\program files\microsoft visual studio\vc98\include\xlocale(282) : warning C4100: '_State' : unreferenced formal parameter
+        c:\program files\microsoft visual studio\vc98\include\xlocale(285) : while compiling class-template member function 'int __thiscall std::codecvt<char,char,int>::do_out(int &,const char *,const char *,const char *& ,char *,char *,char *& ) const'
+c:\program files\microsoft visual studio\vc98\include\xlocale(289) : warning C4018: '<' : signed/unsigned mismatch
+        c:\program files\microsoft visual studio\vc98\include\xlocale(289) : while compiling class-template member function 'int __thiscall std::codecvt<char,char,int>::do_length(int &,const char *,const char *,unsigned int) const'
+c:\program files\microsoft visual studio\vc98\include\xlocale(287) : warning C4100: '_State' : unreferenced formal parameter
+        c:\program files\microsoft visual studio\vc98\include\xlocale(289) : while compiling class-template member function 'int __thiscall std::codecvt<char,char,int>::do_length(int &,const char *,const char *,unsigned int) const'
+c:\program files\microsoft visual studio\vc98\include\fstream(219) : warning C4097: typedef-name '_Mysb' used as synonym for class-name 'basic_filebuf<char,struct std::char_traits<char> >::basic_streambuf<char,struct std::char_traits<char> >'
+        c:\program files\microsoft visual studio\vc98\include\fstream(213) : while compiling class-template member function 'void __thiscall std::basic_filebuf<char,struct std::char_traits<char> >::_Init(struct _iobuf *,enum std::basic_filebuf<char,struct std::char_traits<char> >::_Initfl)'
+c:\program files\microsoft visual studio\vc98\include\fstream(220) : warning C4127: conditional expression is constant
+        c:\program files\microsoft visual studio\vc98\include\fstream(213) : while compiling class-template member function 'void __thiscall std::basic_filebuf<char,struct std::char_traits<char> >::_Init(struct _iobuf *,enum std::basic_filebuf<char,struct std::char_traits<char> >::_Initfl)'
+c:\program files\microsoft visual studio\vc98\include\fstream(221) : warning C4097: typedef-name '_Mysb' used as synonym for class-name 'basic_filebuf<char,struct std::char_traits<char> >::basic_streambuf<char,struct std::char_traits<char> >'
+        c:\program files\microsoft visual studio\vc98\include\fstream(213) : while compiling class-template member function 'void __thiscall std::basic_filebuf<char,struct std::char_traits<char> >::_Init(struct _iobuf *,enum std::basic_filebuf<char,struct std::char_traits<char> >::_Initfl)'
+c:\program files\microsoft visual studio\vc98\include\xlocnum(543) : warning C4018: '<=' : signed/unsigned mismatch
+        c:\program files\microsoft visual studio\vc98\include\xlocnum(542) : while compiling class-template member function 'class std::ostreambuf_iterator<char,struct std::char_traits<char> > __cdecl std::num_put<char,class std::ostreambuf_iterator<char,struct std::char_traits<char> > >::_Fput(class std::ostreambuf_iterator<char,struct std::char_traits<char> >,class std::ios_base &,char,const char *,unsigned int,unsigned int)'
+c:\program files\microsoft visual studio\vc98\include\xlocnum(599) : warning C4018: '<' : signed/unsigned mismatch
+        c:\program files\microsoft visual studio\vc98\include\xlocnum(588) : while compiling class-template member function 'class std::ostreambuf_iterator<char,struct std::char_traits<char> > __cdecl std::num_put<char,class std::ostreambuf_iterator<char,struct std::char_traits<char> > >::_Iput(class std::ostreambuf_iterator<char,struct std::char_traits<char> >,class std::ios_base &,char,char *,unsigned int)'
+c:\program files\microsoft visual studio\vc98\include\xlocnum(606) : warning C4018: '<=' : signed/unsigned mismatch
+        c:\program files\microsoft visual studio\vc98\include\xlocnum(588) : while compiling class-template member function 'class std::ostreambuf_iterator<char,struct std::char_traits<char> > __cdecl std::num_put<char,class std::ostreambuf_iterator<char,struct std::char_traits<char> > >::_Iput(class std::ostreambuf_iterator<char,struct std::char_traits<char> >,class std::ios_base &,char,char *,unsigned int)'
+c:\program files\microsoft visual studio\vc98\include\xstring(600) : warning C4245: 'initializing' : conversion from 'const int' to 'const unsigned int', signed/unsigned mismatch
+        c:\program files\microsoft visual studio\vc98\include\xmemory(59) : while compiling class-template static data member 'const unsigned int std::basic_string<char,std::char_traits<char>,std::allocator<char> >::npos'
+c:\program files\microsoft visual studio\vc98\include\ostream(291) : warning C4018: '<=' : signed/unsigned mismatch
+        d:\github\telnet\telnetsession.cpp(40) : see reference to function template instantiation 'class std::basic_ostream<char,struct std::char_traits<char> > &__cdecl std::operator <<(class std::basic_ostream<char,struct std::char_traits<char> > &,const char *)' being compiled
+c:\program files\microsoft visual studio\vc98\include\ostream(305) : warning C4018: '!=' : signed/unsigned mismatch
+        d:\github\telnet\telnetsession.cpp(40) : see reference to function template instantiation 'class std::basic_ostream<char,struct std::char_traits<char> > &__cdecl std::operator <<(class std::basic_ostream<char,struct std::char_traits<char> > &,const char *)' being compiled
+c:\program files\microsoft visual studio\vc98\include\xlocnum(430) : warning C4100: '_Lobj' : unreferenced formal parameter
+        c:\program files\microsoft visual studio\vc98\include\xlocnum(431) : while compiling class-template member function 'void __thiscall std::num_put<char,class std::ostreambuf_iterator<char,struct std::char_traits<char> > >::_Init(const class std::_Locinfo &)'
 Linking...
 Creating command line "bscmake.exe /nologo /o"Debug/Telnet.bsc"  .\Debug\Connection.sbr .\Debug\Console.sbr .\Debug\Main.sbr .\Debug\SendBuf.sbr .\Debug\TelnetSession.sbr"
 Creating browse info file...
@@ -40,7 +240,7 @@ Creating browse info file...
 
 
 <h3>Results</h3>
-Telnet.exe - 0 error(s), 7 warning(s)
+Telnet.exe - 0 error(s), 106 warning(s)
 </pre>
 </body>
 </html>
